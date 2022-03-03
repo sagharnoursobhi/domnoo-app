@@ -5,10 +5,16 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install vue2
+vue init webpack domnoo-app
+
+#project directory
+cd domnoo-app
+
+#install node
 npm install
 
-# serve with hot reload at localhost:8080
+# Run the app at localhost:8080
 npm run dev
 
 # build for production with minification
