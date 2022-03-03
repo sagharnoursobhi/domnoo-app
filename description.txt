@@ -1,0 +1,32 @@
+
+we use some external libraries and google framework firefox to fetch data from backend.
+Libraries: 1- I used vue-material card library to use card, side drawer, tabs.
+2- I used vue-scroll-reveal to create animatied scroll
+
+get request on browser :
+https://domnoo-53917-default-rtdb.firebaseio.com/users.json?orderBy="email"&&equalTo="francis@gmail.com"
+
+=> if you want to make a query of a value in firefox for example user here, you should add index of that cuz by default
+firefox does not get it
+
+{
+  "-LJVJNFaRnLVMW5mf83f": {
+  "email": "francis@gmail.com"
+  }
+}
+
+"users":{
+    ".indexOn":["email"]
+ }
+
+ deploying site on production usong firefox: First of all we must install firebase tools globally.
+ then use npm run build that create a dist folder containing all files compressed then
+ 1-firebase login
+ 2-firebase init => hosting
+ 3-we don't use public(default directory) so we must type dist
+ 4-Configure as a single-page app (rewrite all urls to /index.html)? no
+ 5- File dist/index.html already exists. Overwrite? No(otherwise nth is gonna work)
+ 6-firebase deploy
+
+ https://domnoo-53917.web.app(fake url to deploy your site)
+

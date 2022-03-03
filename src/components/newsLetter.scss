@@ -1,0 +1,46 @@
+.news-letter-container{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  .title{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(67, 63, 63);
+    font-weight: 600px;
+    margin-bottom: 20px;
+  }
+  div.form{
+    button{
+      border: 0;
+      padding: 12px 35px;
+      background: #6c062d;
+      color: white;
+      font-size: 16px;
+      margin-left: 10px;
+      border-radius: 10px;
+    }
+    input {
+      padding: 15px 45px;
+      border: 0;
+      background: rgb(199, 197, 197);
+      border-radius: 10px;
+    }
+  }
+  .description {
+    color: rgb(67, 63, 63);
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .label-error {
+    margin-top: 20px;
+    div.error {
+      color:#6c062d;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}

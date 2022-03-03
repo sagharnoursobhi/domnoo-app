@@ -1,0 +1,64 @@
+@import './menu.scss';
+@import './newsLetter.scss';
+html{
+  scroll-behavior: smooth;
+}
+.footer-container {
+  width: 100%;
+  height: 200px;
+  background:black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+    h3.contact-title{
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    div.contact-number{
+      color:#fff;
+      font-size: 24px;
+      padding-top: 10px;
+      border-top: 1px solid gray;
+    }
+}
+
+.header-container {
+  .md-toolbar.md-theme-default.md-primary {
+     background: rgb(96, 6, 6);
+  }
+  .md-toolbar-section-end {
+
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    div.md-button-content {
+      img.hamburger-menu{
+        max-width: 30px;
+      }
+    }
+  }
+  .logo{
+    max-width: 90px;
+    margin-left: 20px;
+  }
+  .hamburger-menu{
+    max-width:0px;
+    margin-right: 20px;
+  }
+  .md-list-item-content{
+    a.link{
+      transition: border-bottom .3s;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+      padding-bottom: 10px;
+      color: black;
+      &:hover {
+        border-color: black;
+      }
+    }
+
+  }
+
+}
